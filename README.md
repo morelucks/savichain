@@ -20,15 +20,14 @@ Savichain addresses these challenges through the following innovations:
    - Digitizes group contributions and disbursements to eliminate physical risks such as theft or loss.  
    - Provides an immutable and transparent ledger for all transactions, ensuring trust among members.
 
-2. **Smart Contracts**:  
-   - Automates processes like loan disbursements, repayments, and contribution tracking, reducing manual errors and disputes.  
-
-3. **Enhanced Security**:  
-   - Contributions are securely stored on the blockchain, making them resistant to theft or physical damage.  
-
-4. **Ease of Access**:  
-   - A user-friendly interface ensures all members can easily participate and monitor group activities without requiring technical expertise.  
-
-5. **Accountability Mechanisms**:  
-   - Borrower obligations are enforced through smart contracts, reducing default rates and ensuring group funds are repaid.
- 
+2. **Enhanced Security**:  
+   - Contributions are securely stored on the blockchain, making them resistant to theft or physical damage.
+     
+3. **Ease of Access**:  
+   - A user-friendly interface ensures all members can easily participate and monitor group activities without requiring technical expertise.
+     
+4. **Accountability Mechanisms**:  
+   - Smart contracts make sure borrowers stick to their repayment terms, helping to reduce defaults and ensuring that group funds are returned.
+  
+5. **Smart Contracts**:  
+   - Automates processes like loan disbursements, repayments, and contribution tracking, reducing manual errors and disputes. 
