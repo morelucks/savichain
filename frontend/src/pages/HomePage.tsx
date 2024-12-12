@@ -12,8 +12,8 @@ import { MdJoinFull } from "react-icons/md";
 
 const HomePage = () => {
   return (
-    <div className="p-5 md:p-10 flex flex-row">
-      <div className="w-[78%]">
+    <div className="p-5 md:p-10 flex flex-col md:flex-row">
+      <div className=" w-full md:w-[78%]">
         <Card className="bg-cover bg-[url('src/assets/bg-image.png')] flex flex-row items-center text-white">
           <CardContent className="w-[50%] flex md:items-center justify-center flex-col">
             <CardTitle>Welcome Back!!</CardTitle>
@@ -64,7 +64,7 @@ const HomePage = () => {
         <Chart />
       </div>
 
-      <div className="w-[19%] border border-b-2 ml-4 p-4">
+      <div className="w-full md:w-[19%] border border-b-2 md:ml-4 p-4">
         <div className="bg-cover h-[3rem] text-black flex items-center justify-center bg-[url('src/assets/bg-image.png')] text-center rounded-xl overflow-hidden">
           My Group
         </div>

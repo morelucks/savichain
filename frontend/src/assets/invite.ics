@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Africa/Lagos
+X-LIC-LOCATION:Africa/Lagos
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+TZNAME:GMT+1
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Africa/Lagos:20241223T200000
+DTEND;TZID=Africa/Lagos:20241223T210000
+DTSTAMP:20241210T140724Z
+ORGANIZER;CN=blockfuselabs:mailto:blockfuselabs@gmail.com
+UID:278pjeff231mjq5eqvgjglfudp@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=victorjames408@gmail.com;X-NUM-GUESTS=0:mailto:victorjames408@gmail
+ .com
+X-GOOGLE-CONFERENCE:https://meet.google.com/dpa-pskh-trq
+X-MICROSOFT-CDO-OWNERAPPTID:1000145584
+CREATED:20241209T090229Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/dp
+ a-pskh-trq\nOr dial: (ZA) +27 10 823 0441 PIN: 823933851#\nMore phone numbe
+ rs: https://tel.meet/dpa-pskh-trq?pin=9293625840201&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20241210T140723Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:PRE-CONTENT TEST COHORT II
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
