@@ -48,4 +48,4 @@ export default tseslint.config({
   },
 })
 ```
-contract address = 0x71ab518aa2C2061eCceB67a5B9eB91bb82f5a23C
+contract address = 0x13cf1161dFB825f7803379d3303e19f7fa9dEcbC
