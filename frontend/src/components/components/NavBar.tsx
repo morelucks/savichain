@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 const NavBar = () => {
   return (
     <div>
@@ -21,13 +23,13 @@ const NavBar = () => {
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
-              className="flex text-sm bg-blue-800 rounded text-white p-3 md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              className="flex text-sm  rounded text-white p-3 md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
               id="user-menu-button"
               aria-expanded="false"
               data-dropdown-toggle="user-dropdown"
               data-dropdown-placement="bottom"
             >
-             Connect Wallet
+             <ConnectButton />
             </button>
             {/* Dropdown menu */}
             <div
@@ -118,19 +120,22 @@ const NavBar = () => {
                   Create New Group
               
                 </Link>
+                 <Link to={"/joingroup"} className="block py-2 px-3 text-white  rounded md:bg-transparent md:text-black md:p-0">
+                     Join Group
+                </Link>
                 <Link to={"/createWaitlist"} className="block py-2 px-3 text-white  rounded md:bg-transparent md:text-black md:p-0">
-                   Create WaitList
+                     
+                     Save
                 </Link>
-                <Link to={"/joingroup"} className="block py-2 px-3 text-white  rounded md:bg-transparent md:text-black md:p-0">
-                   Join Group
-                </Link>
+              
               
               <li>
                 <a
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  My Group
+                   Invest
+                
                 </a>
               </li>
             </ul>
