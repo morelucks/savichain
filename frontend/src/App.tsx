@@ -4,13 +4,14 @@ import { RouterProvider,createBrowserRouter,Route,createRoutesFromElements } fro
 import SignUp from './components/components/SignUp'
 import HomePage from './pages/HomePage'
 import WaitList from './components/components/WaitList'
+import LandingPage from './pages/LandingPage'
 import JoinGroup from './components/components/JoinGroup'
 
 function App() {
   const router=createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootPage/>}>
-        <Route index element={<HomePage/>} />
+        <Route index element={<LandingPage/>} />
          <Route path='createAccount' element={<SignUp/> } />
          <Route path='createWaitlist' element={<WaitList/> } />
          <Route path='joingroup' element={<JoinGroup/> } />
