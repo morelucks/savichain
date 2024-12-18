@@ -38,7 +38,7 @@ writeContract({
 
 
   return (
-    <div className="flex justify-center items-center align-middle p-3 md:p-0">
+    <div className="flex justify-center  align-middle p-3 md:p-0 h-screen">
       <form
         onSubmit={handleSubmit}
         className="md:w-[30%] md:mt-16 flex flex-col"

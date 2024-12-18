@@ -28,8 +28,8 @@ export default function GroupList() {
   if (isError) return <p>Error loading groups.</p>;
 
   return (
-    <div className="flex justify-center items-center">
-      <div className="w-[80%] flex flex-col items-center mt-10">
+    <div className="flex justify-center items-center h-screen">
+      <div className="w-[80%] flex flex-col items-center mt-10 h-screen">
         <h2 className="text-2xl my-4 font-normal text-black">
           Join Savings Group
         </h2>
