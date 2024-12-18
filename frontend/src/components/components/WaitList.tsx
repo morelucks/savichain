@@ -4,7 +4,7 @@ import { Avatar, AvatarImage } from "../ui/avatar";
 
 const WaitList = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col  items-center h-screen">
       <div className="md:w-[40%] flex flex-col items-center mt-10">
         <h2 className="text-2xl my-4 font-normal text-black">Your Funds are safe</h2>
 
