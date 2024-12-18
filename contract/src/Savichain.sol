@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.8;
 
 contract Savichain {
     struct Group {
@@ -12,10 +12,21 @@ contract Savichain {
         uint256 startTime; // Timestamp when the group was created
         bool isWithdrawn; // To prevent double withdrawals
     }
-
+        struct GroupDetails {
+                uint256 id;
+                string name;
+                address[] members;
+                uint256 amount;
+                uint256 totalSavings;
+                uint256 withdrawalDuration;
+                uint256 startTime;
+                bool isWithdrawn;
+            }
     uint256 public groupIdCounter;
     mapping(uint256 => Group) public groups;
     mapping(address => uint256) public individualSavings;
+    uint256[] public groupIds; // Array to store all group IDs for enumeration
+
 
     event GroupCreated(uint256 indexed groupId, string name, address[] members);
     event MemberJoined(uint256 indexed groupId, address indexed member);
@@ -148,7 +159,26 @@ contract Savichain {
             group.isWithdrawn
         );
     }
+ // Function to fetch all group details
+    function getAllGroups() public view returns (GroupDetails[] memory) {
+        GroupDetails[] memory allGroups = new GroupDetails[](groupIdCounter);
 
+        for (uint256 i = 1; i <= groupIdCounter; i++) {
+            Group storage group = groups[i];
+            allGroups[i - 1] = GroupDetails({
+                id: i,
+                name: group.name,
+                members: group.members,
+                amount: group.amount,
+                totalSavings: group.totalSavings,
+                withdrawalDuration: group.withdrawalDuration,
+                startTime: group.startTime,
+                isWithdrawn: group.isWithdrawn
+            });
+        }
+
+        return allGroups;
+    }
     // Get balance of a member in a group
     function getBalance(uint256 groupId, address member) public view returns (uint256) {
         return groups[groupId].balances[member];
