@@ -27,9 +27,9 @@ const LandingPage = () => {
         </div>
 
         <div className="flex flex-row items-center">
-            <button className="rounded-full bg-blue-900 text-white font-wix py-4 px-5">
+            {/* <button className="rounded-full bg-blue-900 text-white font-wix py-4 px-5">
             Connect your wallet
-            </button>
+            </button> */}
             <button className="rounded-full bg-white text-blue-900 font-wix py-2 px-5 flex flex-row items-center border border-blue-900 ml-4">
             Learn more
             <div  className=" ml-2 bg-blue-900 p-3 rounded-full text-center flex items-center "> 
