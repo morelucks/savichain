@@ -18,7 +18,7 @@ const HomePage = () => {
           <CardContent className="w-[50%] flex md:items-center justify-center flex-col">
             <CardTitle>Welcome Back!!</CardTitle>
             <CardDescription className="text-2xl md:text-5xl md:my-5">
-              Luckify
+              Savichain
             </CardDescription>
           </CardContent>
           <CardContent className="w-[50%] flex items-center justify-center flex-col">
@@ -36,7 +36,7 @@ const HomePage = () => {
           <Card className="flex flex-row items-start w-[48%]  p-8 bg-cover bg-[url('src/assets/Ellipse_Group.png')]">
             <SiVirustotal />
             <div className=" md:ml-4">
-              <p className="text-sm"> My Total Contribution</p>
+              <p className="text-sm"> Group Contribution</p>
               <h2 className="font-semibold text-3xl mt-3">$6000</h2>
             </div>
           </Card>
@@ -44,7 +44,7 @@ const HomePage = () => {
             <SiVirustotal />
             <div className=" md:ml-4">
               <p className="text-sm"> My Total Contribution</p>
-              <h2 className="font-semibold text-3xl mt-3">$6000</h2>
+              <h2 className="font-semibold text-3xl mt-3">$1000</h2>
             </div>
           </Card>
         </div>

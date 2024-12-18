@@ -33,7 +33,7 @@ const Chart = () => {
       <div className="flex flex-row items-center justify-between mt-3">
         <div>
           <h2 className="font-semibold text-xl md:text-3xl">
-            Savings by months
+            Group Savings by months
           </h2>
           <p className="font-thin">Savings summary from 1-12 Nov, 2024</p>
         </div>
