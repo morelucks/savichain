@@ -116,4 +116,32 @@ contract SavichainTest is Test {
         vm.prank(member3);
         savichain.saveInGroup{value: 1 ether}(groupId);
     }
+
+    // Test: Allow a user to join an existing group
+    function testJoinGroup() public {
+        address[] memory members = new address[](1);
+        members[0] = member1;
+
+        uint256 groupId = savichain.createGroup("Initial Group", members, 1 ether, 30 days);
+
+        vm.prank(member2);
+        savichain.joinGroup(groupId);
+
+        assertTrue(savichain.isMember(groupId, member1));
+        assertTrue(savichain.isMember(groupId, member2));
+    }
+
+    // Test: Allow a user to make individual savings
+    function testIndividualSave() public {
+        vm.deal(member1, 2 ether); // Add ether to member1
+        vm.prank(member1);
+        savichain.individualSave{value: 1 ether}();
+
+        assertEq(savichain.individualSavings(member1), 1 ether);
+
+        vm.prank(member1);
+        savichain.individualSave{value: 0.5 ether}();
+
+        assertEq(savichain.individualSavings(member1), 1.5 ether);
+    }
 }
