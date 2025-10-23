@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const NavBar = () => {
   return (
@@ -21,16 +20,7 @@ const NavBar = () => {
           </Link>
           {/*  */}
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="flex text-sm  rounded text-white p-3 md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-              id="user-menu-button"
-              aria-expanded="false"
-              data-dropdown-toggle="user-dropdown"
-              data-dropdown-placement="bottom"
-            >
-             <ConnectButton />
-            </button>
+            <appkit-button />
             {/* Dropdown menu */}
             <div
               className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
