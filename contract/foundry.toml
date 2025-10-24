@@ -4,3 +4,13 @@ out = "out"
 libs = ["lib"]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# Base Network Configuration
+[rpc_endpoints]
+base-sepolia = "https://sepolia.base.org"
+base = "https://mainnet.base.org"
+
+# Etherscan configuration for contract verification
+[etherscan]
+base = { key = "${ETHERSCAN_API_KEY}", url = "https://api.basescan.org/api" }
+base-sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.basescan.org/api" }

@@ -1,2 +1,2 @@
-export const CONTRACT_ADDRESS = "0xE6767fd7E490Bcf721a6201f23b6EeceEF91dcdE";
+export const CONTRACT_ADDRESS = "0x52098ecE0cA20d8caa112a471D8B45d748716DdA";
 export const CONTRACT_ABI = require("./abi");

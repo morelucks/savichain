@@ -1,6 +1,7 @@
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
-import { mainnet, polygon, optimism, arbitrum, base } from '@reown/appkit/networks'
+import { mainnet, polygon, optimism, arbitrum, base, sepolia, polygonMumbai, optimismSepolia, arbitrumSepolia } from '@reown/appkit/networks'
+import { siweConfig } from './siweConfig'
 
 // Custom Lisk network
 const lisk = {
@@ -38,7 +39,7 @@ const metadata = {
 }
 
 // 3. Set the networks
-const networks = [mainnet, polygon, optimism, arbitrum, base, lisk]
+const networks = [mainnet, polygon, optimism, arbitrum, base, sepolia, polygonMumbai, optimismSepolia, arbitrumSepolia, lisk]
 
 // 4. Create Wagmi Adapter
 const wagmiAdapter = new WagmiAdapter({
@@ -54,8 +55,21 @@ createAppKit({
   projectId,
   metadata,
   features: {
-    analytics: true
-  }
+    analytics: true,
+    email: true, // Enable email authentication
+    socials: [
+      "google",
+      "x", 
+      "github",
+      "discord",
+      "apple",
+      "facebook",
+      "farcaster"
+    ],
+    emailShowWallets: true
+  },
+  allWallets: "SHOW",
+  siweConfig: siweConfig // Add SIWE authentication
 })
 
 export { wagmiAdapter }
